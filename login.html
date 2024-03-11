@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>   
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="style/css/css600.css" />
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/login.css">
+    <script src="/JS/login.js"></script>
+    <title>登录</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">主页</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"data-toggle="dropdown" >
+        <span class="navbar-toggler-icon" data-toggle="dropdown"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ranking.html">排行</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">我的</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new.html">最新</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">联系我们</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="true">
+              全部
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">电视</a></li>
+              <li><a class="dropdown-item" href="#">动漫</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+        </div>
+        </nav>
+    <div class="con">
+    <div class="login">
+    <div class="login_logo sign-in-container">
+        <form action="" method="post" name="login">
+            <h1>登录</h1>
+            <span>或使用您的账号</span>
+            <input type="text" placeholder="name" name="name" id="name">
+            <input type="password" placeholder="password" name="password" id="password">
+            <input type="submit"value="登录" class="login_btn" onClick="return getStorage()">
+            <p><a href="#">忘记密码</a></p>
+        </form>
+    </div>
+    <div class="other_box">
+        <div class="other">
+            <div class="overlay-panel overlay-right">
+                <h1>没有账号？</h1>
+                <p>立即注册加入我们吧</p>
+                <a href="/HTML/register.html">
+                <button class="click" id="signUp" >注册</button>
+            </a>
+            </div>
+        </div>
+    </div>
+       </div> 
+    </div>
+</body>
+</html>
